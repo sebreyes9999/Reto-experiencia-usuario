@@ -2,9 +2,9 @@
 
 .caja {
 
-  display: flex; /* Establece el contenedor como flexbox */
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: center; /*Centrar el contenido */
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 
 }
 
@@ -15,17 +15,45 @@
 
 }
 
+
+.titulo {
+
+  margin: auto;
+  display: table;
+  
+}
+
 .titulo h1{
 
-  text-align: center;
-  padding: auto;
   font-size: 50px;
+  float: left;
+  position: relative;
+  font-size: 2.5em;
+  box-shadow: 10px 10px 20px 0 #111;
 
+}
+
+.efecto{
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid #111;
+  animation: maquina 5s infinite alternate steps(60);
+}
+
+@keyframes maquina{
+  from{
+    width: 100%;
+  }
+  to{
+    width: 0;
+  }
 }
 
 .texto {
 
-  flex: 0.4; /* Permite que el texto ocupe el espacio restante */
+  flex: 0.4;
   text-align: center;
   margin: 70px;
   padding: 10px;
