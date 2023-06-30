@@ -1,73 +1,107 @@
-/*Estilos Experiencia de Usuario*/
-
-.caja {
-
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-
+/**********************************EXPERIENCIAS******************************************/
+.caja-experiencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
 }
-
-.portada img{
-
-  width: 100%;
-  height: 600px;
-
-}
-
-
-.titulo {
-
-  margin: auto;
-  display: table;
-  
-}
-
-.titulo h1{
-
-  font-size: 50px;
-  float: left;
-  position: relative;
-  font-size: 2.5em;
-  box-shadow: 10px 10px 20px 0 #111;
-
-}
-
-.efecto{
-  position: absolute;
-  right: 0;
-  width: 0;
-  background: white;
-  border-left: 1px solid #111;
-  animation: maquina 5s infinite alternate steps(60);
-}
-
-@keyframes maquina{
-  from{
+.portada-experiencia .img-experiencia{
     width: 100%;
-  }
-  to{
+    height: 600px;
+    background-position: center;
+    
+} 
+.titulo-experiencia {
+    margin: auto;
+    display: table;   
+} 
+.titulo-experiencia .frase-experiencia{
+    font-size: 50px;
+    float: left;
+    position: relative;
+    font-size: 2.5em;
+    box-shadow: 10px 10px 20px 0 #111;  
+}
+.subtitulo-experiencia{
+    color: #111;
+}
+
+.parrafo-experiencia{
+    color: #111;
+ 
+}
+.animacion-experiencia{
+    position: absolute;
+    right: 0;
     width: 0;
-  }
+    background: white;
+    border-left: 1px solid #111;
+    animation: maquina 8s infinite alternate steps(60);
+    flex-direction: row;
+}
+@keyframes maquina{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+} 
+.texto-experiencia { 
+    flex: 0.4;
+    text-align: center;
+    margin: 70px;
+    padding: 10px;
+    height: 200px;
+    box-shadow: 10px 10px 20px 0 #111;
+    overflow: scroll;
+}  
+.video-experiencia {  
+    text-align: center;
+    padding: 10px;
+    margin: 70px;
 }
 
-.texto {
+@media screen and (max-width: 1300px){
+    .caja-experiencia {
+        flex-direction: column;
+        
+    }
+    .video-experiencia {  
+        flex-direction: column;
 
-  flex: 0.4;
-  text-align: center;
-  margin: 70px;
-  padding: 10px;
-  height: 200px;
-  box-shadow: 10px 10px 20px 0 #111;
+    }
+    .header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-Footer{
+        flex-direction: column;
+    }
+    
+    .copyright-Footer>p{
+        text-align: center;
+    }
 
 }
-
-.video {
-
-  text-align: center;
-  padding: 10px;
-  margin: 70px;
-
+/***************************************************footer**************************************/
+.container-Footer{
+    color: #EEEEEE;
+    background-color: #0e1f87;
+    display: flex;
+    align-items: flex-start;
+    font-family: "Inter", "san-serif";
+    align-items: center;
 }
-
-/*Estilos Experiencia de Usuario*/
+/**********************************PRODUCTOS******************************************/
+/*
+p{
+    color: #5c5858;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+*/
